@@ -1,0 +1,41 @@
+expname = scene0616
+basedir = ./logs
+datadir = ./data/scannet/scene0616_00
+dataset_type = scannet
+trainskip = 200
+
+N_iters = 2001
+N_rand = 1024
+N_samples = 256
+N_importance = 16
+chunk = 4096  # 1024 * 16
+frame_features = 0
+optimize_poses = True
+use_deformation_field = False
+share_coarse_fine = True
+multires = 8
+
+rgb_weight = 0.1
+depth_weight = 0.01
+fs_weight = 10.0
+trunc_weight = 6000.0
+trunc = 0.05
+
+rgb_loss_type = l2
+sdf_loss_type = l2
+
+mode = sdf
+use_viewdirs = True
+raw_noise_std = 0.0
+
+translation = [-2, 0, 2.31]
+sc_factor = 0.5
+crop = 6
+near = 0.0
+far = 2.0
+
+factor = 1
+render_factor = 10
+
+i_img = 40000
+i_mesh = 2000
